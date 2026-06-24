@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Secrets
+.env
+
+# Data (tracked by DVC instead)
+data/raw/
+data/processed/
+
+# Models
+models/
+*.pt
+*.pth
+*.pkl
+
+# MLflow
+mlruns/
+
+# Misc
+.DS_Store
+*.ipynb_checkpoints

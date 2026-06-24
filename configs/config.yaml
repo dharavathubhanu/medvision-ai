@@ -1,0 +1,31 @@
+project:
+  name: "MedVision-AI"
+  version: "1.0.0"
+
+paths:
+  data_raw: "data/raw"
+  data_processed: "data/processed"
+  models_cv: "models/cv"
+  models_nlp: "models/nlp"
+
+cv_model:
+  architecture: "convnext_base"
+  num_classes: 14
+  image_size: 224
+  batch_size: 32
+  learning_rate: 0.0001
+  epochs: 20
+  confidence_threshold: 0.5
+
+nlp_model:
+  model_name: "dmis-lab/biobert-base-cased-v1.2"
+  max_length: 512
+
+rag:
+  embedding_model: "sentence-transformers/all-MiniLM-L6-v2"
+  top_k: 3
+  llm_model: "llama3.1"
+
+mlflow:
+  tracking_uri: "mlruns"
+  experiment_name: "medvision-cv"
