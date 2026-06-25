@@ -14,7 +14,7 @@ cv_model:
   image_size: 224
   batch_size: 32
   learning_rate: 0.0001
-  epochs: 20
+  epochs: 10
   confidence_threshold: 0.5
 
 nlp_model:
